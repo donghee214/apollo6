@@ -236,6 +236,8 @@ $(document).on('pageinit', function(event) {
     });
     var yam = localStorage.getItem("lastname");
     var des = localStorage.getItem("des");
+    var pic = localStorage.getItem("pic");
+
     $(".beach1").html(yam);
     $(".extra").html(des);
     $(".hotspot").on("taphold", function() {
