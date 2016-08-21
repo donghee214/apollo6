@@ -1,5 +1,3 @@
-
-
 var beach;
 
 $.ajaxPrefilter(function(options, originalOptions, jqXHR) { options.async = true; });
@@ -205,6 +203,12 @@ $(document).on('pageinit', function(event) {
     $(".message").swiperight(function() {
         $(".location").removeClass("right5");
         $(".message").removeClass("right4");
+
+    });
+
+    $(".Data").click(function() {
+        $(".location").addClass("right5");
+        $(".message").addClass("right4");
 
     });
 
